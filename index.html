@@ -21,7 +21,7 @@
         </div>
         <nav class="navigation">
           <a href="/" class="navigation__link">Home Page</a>
-          <a href="/privacy" class="navigation__link">Privacy Policy</a>
+          <a href="/privacy.html" class="navigation__link">Privacy Policy</a>
         </nav>
         <div class="age-sign">
           <img src="/assets/img/age-icon.svg" alt="Age 18 and more" />
@@ -92,7 +92,7 @@
           fish. The game will impress you with beautiful graphics, exciting
           bonus rounds and numerous completely free game options.
         </p>
-        <a href="/game" class="game__button">Play For Free</a>
+        <a href="game.html" class="game__button">Play For Free</a>
       </div>
     </section>
     <section class="blog" id="blog">
@@ -109,7 +109,7 @@
               symbols or win multipliers that help increase your chances of
               winning.
             </p>
-            <a href="#" class="article__link">Read more...</a>
+            <a href="article-bonus.html" class="article__link">Read more...</a>
           </article>
           <article class="article">
             <h3 class="article__header">Fascinating Subject</h3>
@@ -118,7 +118,7 @@
               opportunity to enjoy a fun and interesting game with their
               favorite sea characters.
             </p>
-            <a href="#" class="article__link">Read more...</a>
+            <a href="article-design.html" class="article__link">Read more...</a>
           </article>
           <article class="article">
             <h3 class="article__header">Social Interaction</h3>
@@ -127,7 +127,7 @@
               opportunity to interact with other users, exchange impressions and
               experiences of the game.
             </p>
-            <a href="#" class="article__link">Read more...</a>
+            <a href="article-social.html" class="article__link">Read more...</a>
           </article>
         </div>
       </div>
@@ -176,7 +176,7 @@
         </div>
         <nav class="navigation">
           <a href="/" class="navigation__link">Home Page</a>
-          <a href="/privacy" class="navigation__link">Privacy Policy</a>
+          <a href="privacy.html" class="navigation__link">Privacy Policy</a>
         </nav>
         <div class="age-sign">
           <img src="/assets/img/age-icon.svg" alt="Age 18 and more" />
@@ -193,5 +193,36 @@
         </p>
       </div>
     </footer>
+
+    <!-- Modal Window for Age Verification -->
+
+    <div class="age-verification-modal" id="age-verification-modal">
+      <div class="age-verification-modal__content">
+        <h2>
+          You need to be 18 years or older to access our site. Are you 18 or
+          older?
+        </h2>
+        <img
+          class="age-modal__age-sign"
+          src="/assets/img/age-icon.svg"
+          alt="Age 18 and more"
+        />
+        <div class="age-verification-modal_buttons">
+          <button id="age-yes" class="age-verification-modal__button">
+            Yes, I am 18 or older
+          </button>
+          <button id="age-no" class="age-verification-modal__button">
+            No, I am under 18
+          </button>
+          <p>
+            <small
+              >All services are provided according to our
+              <a href="terms.html">Terms and Conditions</a>.</small
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
