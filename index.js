@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     ageVerificationFail.addEventListener('click', () => {
-      window.location.href = 'privacy.html';
+      window.location.href = './privacy.html';
     });
   } else {
     showCookieNotification();

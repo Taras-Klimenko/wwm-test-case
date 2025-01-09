@@ -3,5 +3,5 @@ const ageVerification = document.cookie
   .some((cookie) => cookie.startsWith('ageVerification=true'));
 
 if (!ageVerification) {
-  window.location.href = 'index.html';
+  window.location.href = './index.html';
 }

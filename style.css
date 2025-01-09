@@ -339,7 +339,7 @@ header {
 .game {
   position: relative;
   padding: 60px 0;
-  background-image: url('/assets/img/ocean-bg.png');
+  background-image: url(./assets/img/ocean-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -427,7 +427,7 @@ article {
 .information {
   position: relative;
   padding: 60px 0;
-  background-image: url(/assets/img/crab-bg.png);
+  background-image: url(./assets/img/crab-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -692,33 +692,32 @@ article {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1139px) {
-    .content-container {
-        padding: 10px;
-    }
+  .content-container {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .join-us__container {
+    flex-direction: column;
+  }
+  .join-us__image-container img {
+    width: 360px;
+    height: 360px;
+  }
 
-    .join-us__container {
-        flex-direction: column;
-    }
-    .join-us__image-container img {
-        width: 360px;
-        height: 360px;
-    }
+  .game__button {
+    width: 350px;
+  }
 
-    .game__button {
-        width: 350px;
-    }
-
-    .articles-container {
-        flex-direction: column;
-    }
+  .articles-container {
+    flex-direction: column;
+  }
 }
