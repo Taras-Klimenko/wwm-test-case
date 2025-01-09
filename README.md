@@ -9,7 +9,7 @@ This project relies on relative paths and is designed to be run in a local devel
    - Clone this repository to your local machine using Git, or download it as a ZIP and extract it.
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/Taras-Klimenko/wwm-test-case.git
    ```
 
 2. **Install a Live Server Tool**
