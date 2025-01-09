@@ -688,3 +688,37 @@ article {
   font-size: 24px;
   margin-top: 72px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1139px) {
+    .content-container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .join-us__container {
+        flex-direction: column;
+    }
+    .join-us__image-container img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .game__button {
+        width: 350px;
+    }
+
+    .articles-container {
+        flex-direction: column;
+    }
+}
