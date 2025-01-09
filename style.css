@@ -1,0 +1,723 @@
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji';
+  line-height: 1.15; /* 1. Correct the line height in all browsers. */
+  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+  tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+  margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct font weight in Chrome and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
+    monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+Correct table border color inheritance in Chrome and Safari. (https://issues.chromium.org/issues/40615503, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+  border-color: currentcolor;
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/* Color Palette */
+
+:root {
+  --background-color: #08102f;
+  --font-primary: #fff;
+}
+
+/* Fonts & Typographics */
+
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* General Layout */
+
+.content-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Montserrat', Verdana, sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Header */
+
+header {
+  background-image: linear-gradient(180deg, #39b7c8 0%, #131b5e 100%);
+}
+
+.header {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo-container,
+.age-sign {
+  padding: 10px;
+}
+
+.header__logo-container img {
+  width: 64px;
+  height: 64px;
+}
+
+.age-sign img {
+  width: 69px;
+  height: 59px;
+}
+
+.navigation__link {
+  padding: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--font-primary);
+  transition: all 0.3s ease;
+}
+
+.navigation__link:hover {
+  color: #39b7c8;
+}
+
+/* About Section */
+
+.about {
+  padding: 60px 0;
+  color: var(--font-primary);
+}
+
+.about__age-sign img {
+  width: 198px;
+}
+
+.about__text-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Join Us Section */
+
+.join-us {
+  padding: 60px 0;
+}
+
+.join-us__container {
+  display: flex;
+  color: var(--font-primary);
+  align-items: center;
+}
+.join-us__image-container {
+  padding: 10px;
+}
+
+.join-us__image-container img {
+  width: 480px;
+  height: 480px;
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+  background-color: #08102f;
+}
+
+.join-us__text-content {
+  padding: 10px;
+  text-align: end;
+}
+
+/* Game Section */
+
+.game {
+  position: relative;
+  padding: 60px 0;
+  background-image: url(./assets/img/ocean-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.game::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #08102f,
+    rgba(8, 16, 47, 0) 15%,
+    rgba(8, 16, 47, 0) 85%,
+    #08102f 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.game__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--font-primary);
+  padding: 60px 0;
+  z-index: 2;
+}
+
+.game__button {
+  text-decoration: none;
+  background-image: linear-gradient(rgb(57, 183, 200) 0%, rgb(19, 27, 94) 100%);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--font-primary);
+  border-radius: 3px;
+  padding: 12px 24px;
+  width: 500px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.game__button:hover {
+  filter: saturate(1.8);
+}
+
+/* Blog Section */
+
+.blog {
+  padding: 60px 0;
+}
+
+.blog__container {
+  color: var(--font-primary);
+  text-align: center;
+}
+
+.articles-container {
+  display: flex;
+  gap: 20px;
+}
+
+article {
+  padding: 10px;
+}
+
+.article__link {
+  color: var(--font-primary);
+  text-decoration: none;
+  transition: color, 0.3s ease;
+}
+
+.article__link:hover {
+  color: #39b7c8;
+}
+
+/* Information Section */
+
+.information {
+  position: relative;
+  padding: 60px 0;
+  background-image: url(./assets/img/crab-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.information::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #08102f,
+    rgba(8, 16, 47, 0) 15%,
+    rgba(8, 16, 47, 0) 85%,
+    #08102f 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.information__container {
+  color: var(--font-primary);
+}
+
+.information__age-sign img {
+  width: 220px;
+}
+
+/* Footer Section */
+
+.footer {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__logo-container {
+  padding: 10px;
+}
+
+.footer__logo-container img {
+  width: 64px;
+  height: 64px;
+}
+
+.footer__text-content {
+  width: 75%;
+  margin: 0 auto;
+  color: var(--font-primary);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer__link,
+.support__link {
+  color: var(--font-primary);
+  transition: color, 0.3s ease;
+}
+
+.footer__link:hover,
+.support__link:hover {
+  color: #39b7c8;
+}
+
+/* PRIVACY PAGE */
+
+/* Privacy Section */
+
+.privacy {
+  padding: 60px 0;
+  color: var(--font-primary);
+}
+
+.privacy__container article {
+  padding: 0;
+}
+
+.privacy__container h2 {
+  font-size: 24px;
+  margin-top: 72px;
+}
+
+/* Modal */
+
+.age-verification-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.age-verification-modal__content {
+  background-image: linear-gradient(180deg, #39b7c8 0%, #131b5e 100%);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  border: 4px solid var(--font-primary);
+}
+
+.age-verification-modal__content h2 {
+  font-size: 18px;
+  color: var(--font-primary);
+}
+
+.age-verification-modal__content img {
+  display: block;
+  margin: 0 auto;
+  width: 69px;
+  height: 59px;
+}
+
+.age-verification-modal__buttons {
+  display: flex;
+}
+
+.age-verification-modal__button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  min-width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.age-verification-modal__button:hover {
+  background-color: #39b7c8;
+}
+
+.age-verification-modal__content small {
+  color: var(--font-primary);
+}
+
+.age-verification-modal__content a {
+  color: var(--font-primary);
+}
+
+/* Cookie Notification */
+
+.cookie-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.cookie-overlay.active {
+  display: block;
+}
+
+.cookie-notification {
+  position: fixed;
+  bottom: -200px;
+  left: 0;
+  right: 0;
+  background-color: #f4f4f4;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  transform: translateY(200px);
+  z-index: 1000;
+}
+
+.cookie-notification.active {
+  transform: translateY(-200px);
+}
+
+.cookie-notification__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cookie-notification__actions {
+  margin-top: 10px;
+}
+
+.cookie-notification__button {
+  margin: 5px;
+  padding: 10px 15px;
+  min-width: 150px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cookie-notification__button:hover {
+  filter: saturate(0.8);
+}
+
+#reject-cookies {
+  background-color: #f44336;
+  color: #fff;
+}
+
+#allow-necessary {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+#allow-all {
+  background-color: #4caf50;
+  color: #fff;
+}
+/* GAME PAGE */
+
+/* Game Area */
+
+.game-area__container {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-area__container iframe {
+  max-width: 1101px;
+  border-radius: 8px;
+  border-color: black;
+  border-style: solid;
+}
+
+/* BLOG PAGES */
+
+.bonus-modes__container,
+.ocean-design__container,
+.social-interaction__container {
+  padding: 100px 0;
+  color: var(--font-primary);
+}
+
+/* TERMS AND CONDITIONS PAGE */
+
+.terms-and-conditions {
+  padding: 60px 0;
+  color: var(--font-primary);
+}
+
+.terms-and-conditions__container h2 {
+  font-size: 24px;
+  margin-top: 72px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1139px) {
+  .content-container {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .join-us__container {
+    flex-direction: column;
+  }
+  .join-us__image-container img {
+    width: 360px;
+    height: 360px;
+  }
+
+  .game__button {
+    width: 350px;
+  }
+
+  .articles-container {
+    flex-direction: column;
+  }
+}
