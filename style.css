@@ -294,6 +294,11 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--font-primary);
+    transition: all 0.3s ease;
+}
+
+.navigation__link:hover {
+    color: #39b7c8;
 }
 
 /* About Section */
@@ -393,6 +398,11 @@ header {
     padding: 12px 24px;
     width: 500px;
     margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.game__button:hover {
+  filter: saturate(1.8);
 }
 
 /* Blog Section */
@@ -418,6 +428,11 @@ article {
 .article__link {
     color: var(--font-primary);
     text-decoration: none;
+    transition: color, 0.3s ease;
+}
+
+.article__link:hover {
+    color: #39b7c8;
 }
 
 /* Information Section */
@@ -482,6 +497,15 @@ article {
     color: var(--font-primary);
     text-align: center;
     margin-bottom: 15px;
+}
+
+.footer__link, .support__link {
+    color: var(--font-primary);
+    transition: color, 0.3s ease;
+}
+
+.footer__link:hover, .support__link:hover {
+    color:#39b7c8;
 }
 
 /* PRIVACY PAGE */
@@ -588,4 +612,16 @@ article {
 .bonus-modes__container, .ocean-design__container, .social-interaction__container {
     padding: 100px 0;
     color: var(--font-primary);
+}
+
+/* TERMS AND CONDITIONS PAGE */
+
+.terms-and-conditions {
+    padding: 60px 0;
+    color: var(--font-primary);
+}
+
+.terms-and-conditions__container h2 {
+    font-size: 24px;
+    margin-top: 72px;
 }
